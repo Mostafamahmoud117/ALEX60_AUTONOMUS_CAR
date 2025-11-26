@@ -1,0 +1,32 @@
+/* 
+ * File:   MLCD4.h
+ * Author: arabm
+ *
+ * Created on August 23, 2025, 7:42 AM
+ */
+
+#ifndef MLCD4_H
+#define	MLCD4_H
+
+
+#define LCD4_DATA_DIR   DDRA
+#define LCD4_COM_DIR    DDRB
+
+#define LCD4_DATA   PORTA
+#define LCD4_COM    PORTB
+
+#define LCD4_RS     PB1
+#define LCD4_EN     PB2
+
+#define LCD_EN PB1
+#define LCD_RS PB0
+
+void init_LCD4();
+void LCD4_enable();
+void LCD4_data(char data);
+void LCD4_cmd(char cmd);
+
+void LCD4_str(char * str);
+void LCD4_num (long int num);
+#endif	/* MLCD4_H */
+
