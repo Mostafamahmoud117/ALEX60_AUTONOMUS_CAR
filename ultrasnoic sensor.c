@@ -10,7 +10,6 @@ void init_ultrasonic() {
     setPINA_DIR(TRIGGER_pin, OUT);
     setPINA_DIR(ECHO_pin, IN);
 
-
     _delay_ms(10);
 
     init_TIMER1(TIMER1_NORMAL,TIMER1_PRE_8);

@@ -37,3 +37,11 @@ void Timer1_ICPF_INT(char state);
 
 #endif	/* TIMER1_H */
 
+//SERVO_SetAngle(0); // Move to 0°
+//                _delay_ms(1000.0); // Safe double argument
+//
+//                SERVO_SetAngle(90); // Move to 90°
+//                _delay_ms(1000.0);
+//
+//                SERVO_SetAngle(180); // Move to 180°
+//                _delay_ms(1000.0);

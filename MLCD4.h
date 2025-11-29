@@ -18,15 +18,13 @@
 #define LCD4_RS     PB1
 #define LCD4_EN     PB2
 
-#define LCD_EN PB1
-#define LCD_RS PB0
-
 void init_LCD4();
-void LCD4_enable();
+
 void LCD4_data(char data);
 void LCD4_cmd(char cmd);
-
-void LCD4_str(char * str);
-void LCD4_num (long int num);
+void LCD4_str(const char *str);
+void LCD4_num(int num);
+void LCD4_enable();
+void LCD4_cmdS(char cmd);
 #endif	/* MLCD4_H */
 
